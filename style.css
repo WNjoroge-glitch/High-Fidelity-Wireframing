@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+   height:o.8rem;
+    display:flex;
+    position: relative;
+    display:none;
+
+}
+header nav ul{
+    position:absolute;
+    right:0;
+    display:flex;
+    
+}
+.list-menu{
+    list-style:none;
+    ]
+}
+.list-menu a{
+    text-decoration:none;
+    margin-left:3rem;
+}
+.static-carousel{
+   display:flex;
+   justify-content:center;
+   
+}
+.static-carousel input{
+    margin-left:0.8rem;
+
+}
+
+section{
+    text-align:center;
+
+}
+img{
+    width:10rem;
+    height:10rem;
+    border-radius:50%;
+}
+
+.description{
+    padding:3rem 0;
+    color:#315C2B;
+    
+}
+.description button{
+    padding:5px 5rem;
+    margin-top:5px;
+    outline:none;
+    border:none;
+    appearance: none;
+    background-color:#9EA93F;
+    cursor:pointer;
+    
+}
+.align{
+    text-align:center;
+    text-transform: uppercase;
+}
+.hidden-section{
+    display:none;
+    text-align:center;
+}
+.offerings{
+    display:flex;
+    flex-direction:column;
+    margin:5px;
+    
+    background-color:#315C2B;
+    color:#B2C037;
+    
+    
+}
+.offerings h3{
+    text-transform: uppercase;
+    padding:1rem 0;
+    
+}
+.offerings p{
+    font-size:1.5rem;
+}
+
+#change-order-section{
+    display:flex;
+    flex-direction:column;
+    
+}
+.call-to-action{
+    padding:15px 0;
+    
+    
+}
+.call-to-action h1{
+    text-transform:uppercase;
+    font-size:2rem;
+
+}
+.style-button{
+    padding:5px 2rem;
+    margin:5px;
+    background-color:#9EA93F;
+    appearance:none;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+.testimonial{
+    margin-bottom:2rem;
+
+}
+.find-a-vendor{
+    margin:1rem 0;
+    padding:3rem 0;
+    background-color:#9EA93F
+}
+
+
+/*media queries*/
+@media (min-width:700px){
+  
+    
+  
+    .hidden-section{
+        display:block;
+        
+    }
+    .offerings{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+     
+
+    
+
+       
+    }
+    .offerings div{
+        width:200px;
+        
+    }
+    .vendors{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        
+    }
+    
+    #change-order-section{
+       
+        flex-direction:column-reverse;
+    }
+    header{
+        display:block;
+    }
+
+   
+}
+
+
+
